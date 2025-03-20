@@ -1,8 +1,8 @@
 /*
 Este componente muestra una tarea individual y maneja los eventos de clic en la tarea.
 Eventos: 
-    - agregar con click
-    - borrar con click
+    - marcar con click al texto
+    - borrar con click botón
 */
 
 const Task = ({ task, onDelete, onToggle }) => {
