@@ -5,38 +5,46 @@
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1{
+  color: rgb(103, 178, 180);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+form {
+  display: flex;
+  margin: 40px;
+}
+.inputTask{
+  background-color: rgb(142, 209, 211);
+  color: rgb(37, 56, 73);
+  width: 300px;
+  border-radius: 10px;
+  border-color:beige;
+  font-size: 14px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.addTaskBtn, .delTaskBtn{
+  background-color: rgb(142, 209, 211);
+  margin-left: 10px;
+  height: 30px;
+  padding: 7px 30px 30px 30px;
+  border-radius: 10px;
+  border-color:beige;
 }
 
-.card {
-  padding: 2em;
+.tasksContainer{
+  display: flex;
+  align-items: baseline;
+  justify-content:flex-end;
+  width: 480px;
 }
 
-.read-the-docs {
-  color: #888;
+.taskDescription{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  cursor: pointer;
+}
+
+/* tacha si está completada */
+.taskDescription.completed {
+  text-decoration: line-through;
+  color: gray;
 }
